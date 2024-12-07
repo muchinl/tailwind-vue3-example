@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="relative font-inter antialiased">
+  <div class="relative font-inter antialiased bg-gradient-to-r">
 
     <main class="relative  flex flex-col justify-center bg-slate-50 overflow-hidden">
       <div class="w-full max-w-5xl mx-auto px-4 md:px-6 py-24">
@@ -11,9 +11,9 @@
         <div class="max-w-xs mx-auto grid gap-6 lg:grid-cols-3 items-start lg:max-w-none">
 
           <!-- Card -->
-          <div class="flex flex-col h-full bg-white border border-slate-200 shadow shadow-slate-950/5 rounded-2xl overflow-hidden">
+          <div class="flex flex-col h-full bg-white border border-slate-200 shadow shadow-slate-950/5 rounded-2xl overflow-hidden hover:animate-spin">
             <!-- Image -->
-            <img class="object-cover h-48 w-full" src="https://cruip-tutorials.vercel.app/equal-height-cards/equal-height-01.jpg" width="304" height="192" alt="Course 01">
+            <img class="object-cover h-48 w-full " src="https://cruip-tutorials.vercel.app/equal-height-cards/equal-height-01.jpg" width="304" height="192" alt="Course 01">
             <!-- Card Content -->
             <div class="flex-1 flex flex-col p-6">
               <!-- Card body -->
@@ -41,7 +41,7 @@
           </div>
 
           <!-- Card -->
-          <div class="flex flex-col h-full bg-white border border-slate-200 shadow shadow-slate-950/5 rounded-2xl overflow-hidden">
+          <div class="flex flex-col h-full bg-white border border-slate-200 shadow shadow-slate-950/5 rounded-2xl overflow-hidden hover:animate-spin">
             <!-- Image -->
             <img class="object-cover h-48 w-full" src="https://cruip-tutorials.vercel.app/equal-height-cards/equal-height-02.jpg" width="304" height="192" alt="Course 02">
             <!-- Card Content -->
@@ -71,9 +71,9 @@
           </div>
 
           <!-- Card -->
-          <div class="flex flex-col h-full bg-white border border-slate-200 shadow shadow-slate-950/5 rounded-2xl overflow-hidden">
+          <div class="flex flex-col h-full bg-white border border-slate-200 shadow shadow-slate-950/5 rounded-2xl overflow-hidden hover:animate-spin">
             <!-- Image -->
-            <img class="object-cover h-48 w-full" src="https://cruip-tutorials.vercel.app/equal-height-cards/equal-height-03.jpg" width="304" height="192" alt="Course 03">
+            <img class="object-cover h-48 w-full hover:text-gray-100" src="https://cruip-tutorials.vercel.app/equal-height-cards/equal-height-03.jpg" width="304" height="192" alt="Course 03">
             <!-- Card Content -->
             <div class="flex-1 flex flex-col p-6">
               <!-- Card body -->
@@ -133,5 +133,7 @@
 </template>
 
 <style scoped>
-
+img {
+  hover: animate-pulse;
+}
 </style>
